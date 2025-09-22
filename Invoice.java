@@ -10,10 +10,10 @@ public class Invoice {
     private String customerSignature;
     private double tradeinAllowance;
     private ArrayList<Option> option;
+    private ArrayList<TradeInVehicle> tradeInVehicles;
     public Vehicle vehicle;
     public Customer customer;
     public Salesperson salesperson;
-    private ArrayList<TradeInVehicle> tradeInVehicles;
 
     public Invoice(int invoiceID, Date date, double finalPrice, double tax, double licenseFee, String customerSignature, double tradeinAllowance, Vehicle vehicle, Customer customer, Salesperson salesperson, TradeInVehicle tradeInVehicle) {
         this.invoiceID = invoiceID;
